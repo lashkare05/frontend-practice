@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>HTML Tags Practice</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="abc.js"></script>
+    </head>
+    <body>
+        <!-- Heading Tags -->
+         <header>
+         <h1>Hello! Welcome.</h1>
+         <h2>Hello! Welcome.</h2>
+         <h3>Hello! Welcome.</h3>
+         <h4>Hello! Welcome.</h4>
+         <h5>Hello! Welcome.</h5>
+         <h6>Hello! Welcome.</h6>
+        </header>
+        <!-- navigation -->
+         <nav> 
+            <a href="#about">About</a>
+            <a href="#lists">Lists</a>
+            <a href="#form">Form</a>
+         </nav>
+
+         <!-- text formatting -->
+          <section id="about">
+            <h2>Text Formatting Tags</h2>
+
+            <p>This is a <strong>strong</strong>tag.</p>
+             <p>This is a <b>bold</b>tag.</p>
+            <p>This is a <em>emphasized</em>tag.</p>
+            <p>This is a <i>italic</i>tag.</p>
+            <p>This is a <u>underline</u>tag.</p>
+            <p>This is a <mark>highlighted</mark>(mark tag)text.</p>
+            <p>This is a <small>small</small>text. tag</p>
+            <p>This is  H<sub>2</sub>O. sub tag.</p>
+            <p>This is x<sup>2</sup> . x raise to 2 . sup tag.</p>
+            <p>This is <del>Deleted text</del>.</p>
+            <p>This is <ins>Inserted test</ins>. it's ins tag.</p>
+          </section>
+           
+          <hr>
+
+          <!-- Lists -->
+           <section id="lists">
+            <h2>Lists</h2>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ol>
+
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Mango</li>
+            </ul>
+
+            <h3>Description List</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Structure of webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Styling webpage.</dd>
+            </dl>
+           </section>
+
+           <hr>
+
+           <!-- Image -->
+            <section>
+                <h2>Image</h2>
+            <img src="" alt="smaple image" width:="200px">
+            </section>
+
+            <!-- Links -->
+             <section>
+                <h2>Links</h2>
+                <a href="#google" target="_blank">Visit Google</a>
+             </section>
+
+             <!-- Table -->
+              <section>
+                <h2>Table</h2>
+                <table border="1">
+                    <caption>Student Marks</caption>
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Marks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>85%</td>
+                        </tr>
+                        <tr>
+                            <td>Jane</td>
+                            <td>56%</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">End of Table</td>
+                        </tr>
+                    </tfoot>
+                </table>
+              </section>
+
+              <!-- Form  -->
+               <section id="form">
+                <h2>Form Elements</h2>
+
+                <form>
+                    <label for="name">Name :</label>
+                    <input type="text" id="name">
+                    <br><br>
+
+                    <label>Email :</label>
+                    <input type="emial">
+                    <br><br>
+
+                    <label>Password :</label>
+                    <input type="password">
+                    <br><br>
+
+                    <label>Age :</label>
+                    <input type="number">
+                    <br><br>
+
+                    <label>Date :</label>
+                    <input type="date">
+                    <br><br>
+
+                    <label>Gender :</label>
+                    Male<input type="radio" name="gender">
+                    Female<input type="radio" name="gender">
+                    <br><br>
+
+                    <label>Skills :</label>
+                    <input type="checkbox"> HTML
+                    <input type="checkbox"> CSS
+                    <input type="checkbox"> Javascript
+                    <br><br>
+
+                    <label>City :</label>
+                    <select>
+                        <option>Mumbai</option>
+                        <option>Pune</option>
+                        <option>Nagpur</option>
+                    </select>
+                    <br><br>
+                    <label>Message :</label>
+                    <textarea rows="4" cols="30"></textarea>
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                </form>
+               </section>
+
+               <!-- Sementic Tags  -->
+                <article>
+                    <h2>Article Tag</h2>
+                    <p>This is an article.</p>
+                </article>
+
+                <aside>
+                    <h3>Aside Tag</h3>
+                    <p>Sidebar content.</p>
+                </aside>
+
+                <details>
+                    <h3>Details & Summary Tag</h3>
+                    <summary>Click to Expand</summary>
+                    <p>Hidden content appears here.</p>
+                </details>
+
+                <figure>
+                    <h3>Figure , Img & Figcaption Tag</h3>
+                    <img src="" alt="figure image"><br>
+                    <figcation>Figure Caption</figcation>
+                </figure>
+
+                <!-- Code Tag  -->
+                 <section>
+
+                    <h2>Code Example</h2>
+                    <h3>code Tag</h3>
+                    <code>
+                        console.log("Hello World");
+                    </code>
+
+                    <pre>
+                        <h3>pre Tag</h3>
+                        function greet() {
+                            console.log("Hello!");
+                        }
+                    </pre>
+                 </section>
+
+                 <footer>
+                    <h3>Footer Tag</h3>
+                    <p>&copy; 2026 HTML Practice Page.</p>
+                 </footer>
+          
+    </body>
+</html>
