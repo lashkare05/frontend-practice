@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="hyperlink, anchor tag, navigation">
+        <meta name="author" content="SDL">
+        <title>Practice Hyperlink</title>
+        <style>
+            .code{
+                background:#dbe7eb;color:green;width:700px;
+            }
+            table{
+                padding: 14px;
+                text-align: center;
+            }
+             .anchorTag-as-btn{
+                            display: inline-block;
+                            padding: 10px 20px;
+                            background-color: blue;
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+            
+        </style>
+    </head>
+    <body>
+        <h1>Hyperlink</h1>
+        <p>The anchor tag is used to create hyperlinks. Hyperlinks allow users to navigate from on page, file, email, or location to another.
+          <br>  <ul>
+            <li> &lt;a&gt;&lt;/a&gt;  = Anchor tag</li>
+            <li>href = Destination URL</li>
+            <li>Visit Website = Clikable text</li>
+          </ul>
+        </p>
+        <ol>
+            <li>href Attribute
+                <p>href stands for Hypertext Reference.<br>
+                It specifies where the link should go.</p>
+                <div class="code">
+                    <br><br>
+                     &lt; a href="www.google.com"&gt; Google Search &lt;/a&gt;<br>
+                </div>
+            </li>
+        </ol>
+
+        
+        
+        <br><label>Link to another page :</label>
+        <a href="practice-1.html" >Practice page-1</a>
+        <br><br>
+       <label>Link to phone number : </label>
+        <a href="tel:919876543210">Call Now</a>
+        <br>
+        <label >Link to Email : </label>
+        <a href="slashkare431@gmail.com">Send Email</a>
+        <br><br>
+        <lable>Target Attribute :</lable>
+        <p> Target : Specifies where the linked document should open.</p>
+        <ul>
+            <li><a href="Www.google.com" target="_self">Google Search</a>
+            <br>_self : (default targrt) Opens in same tab.</li>
+            <br><br>
+            <li><a href="www.google.com" target="_blank" > Target = _blank : opens in new tab</a></li>
+            <br><br>
+            <li> <a href="www.whatsapp.com" target="_parent">target= _parent : Opens in the parent frame.</a> </li>
+            <br><br>
+            <li> <a href="www.instagram.com" target="_top">target= _top : Opens in the full browser window</a> </li>
+
+        </ul>
+        <hr>
+        <section>
+            <h3>download Atrribute</h3>
+            <p>Downloads the linked file insted of opening it .</p>
+            <a href="resume.pdf" download>Download Resume</a>
+        </section>
+        <section>
+            <h3>title Attribute</h3>
+            <p>Shows a tooltip when the mouse hovers over the link.</p>
+            <a href="htttps://www.google.com" title="Open Google Website">Google Search</a>
+        </section>
+        <section>
+            <h3>rel Attribute</h3>
+            <p>Defines the relationship betweent the current page and the linked page.<br>
+            Commonly used with target="_blank"</p>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferer"> Google Search</a>
+            <p>common values for rel = noopener noreferer.
+                <br>noopener : Prevents new tab from accessing current page.
+                <br>noreferer : Hides referer information.
+                <br>nofollow : Tells search engines not to follow the link.
+            </p>
+            
+        </section>
+
+        <section>
+            <h3>id and Fragment Links</h3>
+            <p>Jump to a specific section on the same page.</p>
+            <div class="code">
+                &lt;h2 id="contact"&gt;Contact Us &lt;/h2&gt; 
+            </div>
+            <label>Link to a section</label>
+            <div class="code">
+                &lt; a href="#contact"&gt;Go to Contact Section&lt;/a&gt;
+            </div>
+        </section>
+
+        <section>
+            <h3>Image as a Link</h3>
+            <div class="code">
+                &lt;a href="https://www.google.com"&gt;&lt;img src="..Images/hero1.jpg" alt="logo"&gt; &lt;/a&gt;
+            </div>
+            clicking the image opens the link.
+        </section>
+        <section>
+            <h3>Empty Link</h3>
+            <div class="code">&lt;a href="#"&gt;Click Here &lt;/a&gt;  </div>
+            points to the top of the current page.
+        </section>
+
+        <section>
+            <h3>Absolute vs Relative Links</h3>
+            <p>Absolute URL : Full web address.</p>
+            <div class="code">&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt; </div>
+            <p>Relative URL : Links to files within the project.</p>
+            <div class="code">&lt;a href="about.html"&gt;About&lt;/a&gt; </div>
+        </section>
+        <hr>
+        <H2>Quick Revision Table</H2>
+        <table border="1">
+            <caption>Anchor tag attributes and purpose</caption>
+            <thead>
+                <tr>
+                    <th>Attributes</th>
+                    <th>Purpose</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>href</td>
+                    <td>Destination URL</td>
+                    <td>href="about.html"</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>Where to open link</td>
+                    <td>target="_blank"</td>
+                </tr>
+                <tr>
+                    <td>download</td>
+                    <td>Download file</td>
+                    <td>after href just add Download</td>
+                </tr>
+                <tr>
+                    <td>title</td>
+                    <td>Tooltip</td>
+                    <td>title="Open site"</td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>Relationship/security</td>
+                    <td>rel="noopener"</td>
+                </tr>
+                <tr>
+                    <td>id+href="#id"</td>
+                    <td>Jump to section</td>
+                    <td>href="#contact"</td>
+                </tr>
+                
+            </tbody>
+        </table>
+       <br>
+        <a href="resume.pdf" download="myResume.pdf" target="_blank" title="Download Resume" rel="noopener noreferer">Download Resume</a>
+
+        <section>
+            <p> You can wrap an anchor tag (&lt;a&gt;) around almost any html element, making that element clickable .</p>
+            <ol>
+                <li> Text (most common) 
+                    <div class="code">&lt;a href="https://example.com"&gt;Visit Website&lt;/a&gt;</div>
+                </li>
+                <li> Image
+                    <div class="code">&lt;a href="https://example.com"&gt;&lt;img src="logo.png" alt="Logo" &gt; &lt;/a&gt;</div>
+                    Clicking the image opens the link.
+                </li>
+                <li> Audio
+                    <div class="code">&lt;a href="song.mp3"&gt;&lt;Download Audio&lt;/a&gt;</div>
+                   Or make an audio player clickable.
+                   <div class="code">
+                    &lt;a href="song.mp3"&gt;&lt;
+                    &lt;audio controls&gt; &lt;source src="song.mp3" type="audio/mpeg" &gt; &lt;/audio&gt; &lt;/a&gt;
+                   </div>
+                </li>
+                <li> Video
+                    <div class="code">&lt;a href="video.mp4"&gt;&lt;video width="300" controls&gt;
+                        &lt;source src="video.mp4" type="video/mp4" &gt;&lt;/video&gt; &lt;/a&gt;</div>
+                   
+                </li>
+                <li> Buttons
+                    <div class="code">&lt;a href="contact.html"&gt;
+                        &lt;button&gt;Contact Us&lt;/button&gt;&lt;/a&gt;</div>
+                        <p> although in modern HTML, it's usually better style the anchor tag(&lt;a&gt;) like a button. I mean that if clicking something. takes the user another page or url. You should use anchor tag even if it looks like a button. <br>&lt;a href="contact.html"&gt;
+                        &lt;button&gt;Contact Us&lt;/button&gt;&lt;/a&gt; &nbsp; &nbsp; Less preferred . <br> Here, a button is placed inside a link. It works, but it's not the best semantic html. <br><p> Prefered : Use an anchor tag and mix it look like a button using css.
+                            <div class="code">&lt;a href="contact.html" class="btn"&gt;
+                        Contact Us&lt;/a&gt;
+                    <br><pre>
+                        .btn{
+                            display: inline-block;
+                            padding: 10px 20px;
+                            background-color: blue;
+                            color: white;
+                            text-decoration: none;
+                            border-radius: 5px;
+                        }
+                    </pre></div>
+                    Contact us looks like a button, but it's actually a link.
+                        </p>
+                        <a href="practice-1.html" class="anchorTag-as-btn" target="_blank">Pracitce page 1</a>
+                    </p>
+                    <h4> When to use anchor tag vs button ?</h4>
+                    <p> use anchor tag when :
+                        <ul>
+                            <li> Going to another page </li>
+                            <li>Opening a website</li>
+                            <li> Downloading a file</li>
+                            <li> Sending an email </li>
+                            <li> Calling a phone number </li>
+                        </ul>
+                        <br>
+                        Use button when :
+                        <ul>
+                            <li> Submitting a form  ,  </li>
+                            <li>opening a popup/modal</li>
+                            <li>running javascript</li>
+                            <li>showing/hiding content</li>
+                        </ul>
+                        <p> Navigation somewhere = anchor tag <br> perform an action = button 
+                        <br><ul>
+                            <li>Go to homepage --> &lt;a&gt;</li>
+                            <li>Submit form --> &lt;button&gt;</li>
+                            <li>Download Resume --> &lt;a&gt;</li>
+                            <li>Show Password --> &lt;button&gt;</li>
+                        </ul>
+                    This distinction is important because browsers, screen readers, and search engines understand the purpose of the element based on whether its an anchor tag or a button.</p>
+                    </p>
+                </li>
+                <li> Entire Section / Cards
+                    <div class="code">&lt;a href="product.html"&gt;
+                        &lt;div class="card"&gt;&lt;h2&gt;Product Name&lt;/h2&gt;
+                        &lt;p&gt;Product Description&lt;/p&gt;
+                    &lt;/div&gt;
+                        &lt;/a&gt;</div>
+                        <p> The whole card becomes clickable . After enclosing whole section or car in anchor tag that section or car become clickable .</p>
+                </li>
+
+               
+            </ol>
+
+        </section>
+        <section>
+            <h2> Rule to remember</h2>
+            <p> An ankle tag can wrap 
+                <ul>
+                    <li> Text</li>
+                    <li> Images</li>
+                    <li>Icons</li>
+                    <li>Buttons</li>
+                    <li>Audio elements</li>
+                    <li>Video elements</li>
+                    <li> Divs, cards ,sections, and many other html elements/li>
+                </ul>
+            </p>
+            <p> Its purpose is simple : make the wrapped content clickable and Navigate to another resource, page, file, email address, phone number, or section of the page .</p>
+        </section>
+
+
+    </body>
+</html>
